@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(225deg, #d16060, rgb(130, 0, 170)); */
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .contentBx
+{
+    display: flex;
+    width: 50%;
+    height: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+section .contentBx .formBx
+{
+    width: 50%;
+}
+
+section .contentBx .formBx h2
+{
+    color: linear-gradient(45deg, #ff0000, #ffa200);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx
+{
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx .inputBx span
+{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx .inputBx input
+{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid #201b1b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .contentBx .formBx .inputBx input[id="Pay_Now"]
+{
+    background: linear-gradient(45deg, #ff0000, #ffa200);
+    color: #fcfbfb;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section .contentBx .formBx .inputBx input[id="Pay_Now"]:hover
+{
+    background: linear-gradient(45deg, #ffa200, #ff0000);
+    
+}
+
+@media (max-width: 770px)
+{
+    section .imgBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    section .contentBx {
+        display: flex;
+        width: 100%;
+        height: 100;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    section .contentBx .formBx
+    {
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 0.9);
+        margin: 50px;
+    }
+}
+
+.underline {
+    position: relative;
+    background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid rgb(245, 69, 0);
+    font-weight: 800;
+}
+button{
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
